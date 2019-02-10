@@ -1,0 +1,23 @@
+{
+  "name": "Cage the page",
+
+  "version": "1.0",
+
+  "description": "Change the images on a page to Nicolas Page face",
+
+  "manifest_version": 2,
+
+  "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Cage the page" // optional; shown in tooltip
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ]
+}
