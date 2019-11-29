@@ -3,7 +3,7 @@ function cage() {
 	if (resources.length > nr){
 		nr = resources.length
 		var imgs = document.getElementsByTagName('img')
-		Array.from(imgs).forEach((e)=>{e.setAttribute('src', 'https://i.imgur.com/a4CBVXS.png')})
+		Array.from(imgs).forEach((e)=>{e.setAttribute('src', chrome.runtime.getURL("cage.png"))})
 		return
     }
 	return
